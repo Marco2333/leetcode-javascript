@@ -3,6 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
+//  时间错杂度O(m+n)，尴尬呀
 var findMedianSortedArrays = function(nums1, nums2) {
 	var i = 0, j = 0,
 		len1 = nums1.length,
