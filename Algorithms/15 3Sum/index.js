@@ -39,7 +39,7 @@ var threeSum = function(nums) {
 			continue;
 		}
 
-		for(j = i + 1, k = len - 1;j < len && k > j;) {
+		for(j = i + 1, k = len - 1;k > j;) {
 			if(nums[i] + nums[j] + nums[k] === 0) {
 				res.push([nums[i], nums[j], nums[k]]);
 				
