@@ -19,12 +19,17 @@ var mergeKLists = function(lists) {
 		minIndex = -1;
 		min = Infinity;
 
-		for(i = 0;i < len;i++) {
+		for(i = 0;i < lists.length;i++) {
+
 			if(lists[i] != null) {
 				if(lists[i].val < min) {
 					min = lists[i].val;
 					minIndex = i;
 				}
+			}
+			else {
+				lists.splice(i, 1);
+				i--;
 			}
 		}
 
